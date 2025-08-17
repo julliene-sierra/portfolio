@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./images/favicon_js.png">
+
+  
+
+  <title>
+    Julliene's Portfolio 
+  </title>
+
+  <meta name="description" content="A 21 year old student studying at STI WEST NEGROS UNIVERSITY.">
+  <meta name="keywords" content="Student Portfolio, Education, Projects, HTML, CSS, JavaScript" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Julliene Valerie Sierra</span>
+        </h1>
+        <p style="font-style: italic; font-family: 'Lucida Handwriting', cursive; text-decoration: underline; font-size: 19px;">
+            "one only knew autumn when the cold rain came"
+          </p>          
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- ***** About ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I am a 21-year-old student at STI West Negros University with a passion for leadership,
+              technology, and personal growth. My goal is to pursue a career in project management, 
+              where I can apply my organizational skills and creativity in solving real-world challenges.
+              I also love to travel! I've been to 3 different countries. 
+            </p>
+            <!-- Click Me Button -->
+            <a href="#" class="btn" id="clickMeBtn">Click Me!</a>
+          </div>
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/mypic.png" alt="Profile Photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Modal for Picture -->
+  <div id="resumeModal" class="modal" aria-hidden="true">
+    <span class="close" aria-label="Close">&times;</span>
+    <img class="modal-content" src="./images/me.png" alt="My Picture">
+  </div>
+  
+    <!-- ***** Education ***** -->
+    <section class="education" id="education">
+      <div class="row">
+        <h2>Education</h2>
+        <div class="edu__content">
+          <h3>STI West Negros University</h3>
+          <p><strong>Bachelor of Science in Information Technology</strong><br>2022 – Present</p>
+          <ul>
+            <li>Specialization: Project Management || UI & UX Design</li>
+            <li>Dean’s Lister (2nd Semester, 2022-2023)</li>
+            <li>Dean’s Lister (2nd Semester, 2023-2024)</li>
+            <li>Dean’s Lister (1st Semester, 2024-2025)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Projects ***** -->
+    <section class="projects" id="projects">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="project__list">
+          <div class="project__item">
+            <h3>iEvaluated: An Enhanced Faculty Evaluation System with Decision Support System</h3>
+            <p>A web and mobile-responsive platform that streamlines faculty performance assessment and delivers data-driven insights to support informed academic and administrative decisions.</p>
+            <ul>
+              <li>Completed: 2025-2026</li>
+            </ul>
+          </div>
+
+          <div class="project__item">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio showcasing background, education, and projects.</p>
+            <ul>
+              <li>Completed: 2025</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Have questions, advice, or just want to connect? Feel free to reach out! 
+          I’d be happy to hear from you. 😊
+        </p>
+        <a href="mailto:jullienesierra2@gmail.com" class="btn">jullienesierra2@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/julliene-sierra/portfolio" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.facebook.com/julliene.24" title="Link to Facebook Profile">
+            <img src="./images/facebook.webp" class="footer__social-image" alt="Facebook">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.instagram.com/ju.lliene/" title="Link to Instagram Profile">
+            <img src="./images/instagram.webp" class="footer__social-image" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2025 Julliene Valerie Sierra. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
