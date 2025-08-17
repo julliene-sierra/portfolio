@@ -396,12 +396,17 @@ body:not(.user-is-tabbing) a:focus { outline: none; }
     .header__text {
         position: absolute;
         top: 50%;
-        left: 50%;                  
-        transform: translate(-50%, -50%); 
-        text-align: center;        
-        width: 90%;                 
-        max-width: 600px;           
-        margin: 0 auto;
+        left: 50%;  
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        text-align: center;       
+  
+        width: 90%;               
+        max-width: 700px;         
+        padding: 0 1rem;
       }
       
   
