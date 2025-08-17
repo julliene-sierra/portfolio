@@ -34,10 +34,17 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
+    /* 🎨 Blended Color Palette */
+    --primary-bg: #BCCCDC;   /* base background */
+    --secondary-bg: #D9EAFD; /* soft highlight */
+    --accent: #F8FAFC;       /* lightest */
+    --text-dark: #333333;    /* dark gray for contrast */
+
+    /* Buttons / Text colors */
     --black: #000;
-    --pink: #ff3258;
-    --white: #f0e9f2;
-    --white-1: #e5e5e6da;
+    --pink: #D9EAFD;   /* keep soft blue for button accent */
+    --white: #F8FAFC;  /* light text/background */
+    --white-1: #BCCCDC; /* secondary text tone */
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -50,8 +57,10 @@
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
-    --border-light: 1px solid rgb(36, 35, 35);
+    --border-light: 1px solid var(--accent);
 }
+
+
 
 html {
     font-size: 62.5%;
@@ -69,9 +78,10 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: #27374D;   /* 👈 Changed background color */
     overflow-x: hidden;
 }
+
 
 .row {
     max-width: var(--container-max-width);
